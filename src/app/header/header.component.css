@@ -1,0 +1,15 @@
+nav {
+  border-radius: 0;
+  box-shadow: 0 5px 10px #111;
+  background-color: rgb(1,1,1);
+}
+
+li > a:hover {
+  color: #f00;
+}
+
+.navbar-brand {
+  color: #f00;
+}
+
+

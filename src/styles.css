@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Bree Serif', serif;
+
+}
+
+body {
+  height: 100%;
+  background: #333 url('assets/images/concert.jpg') no-repeat fixed center;
+  background-size: cover;
+}

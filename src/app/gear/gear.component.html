@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1><strong class="page-title">Gear</strong></h1>
+  </div>
+</div>
+<div class="row">
+  <br>
+  <div class="col-xs-12">
+    <ul class="nav nav-pills">
+      <li role="presentation" [ngClass]="{active: listNav === 'keys'}">
+        <a (click)="onSelectKeys()">Keys</a>
+      </li>
+      <li role="presentation" [ngClass]="{active: listNav === 'drums'}">
+        <a (click)="onSelectDrums()">Drums</a>
+      </li>
+      <li role="presentation">
+        <a>Bass Amps</a>
+      </li>
+      <li role="presentation">
+        <a>Guitar Amps</a>
+      </li>
+      <li role="presentation">
+        <a>Guitars</a>
+      </li>
+      <li role="presentation">
+        <a>DJ Gear</a>
+      </li>
+      <li role="presentation">
+        <a>Percussion</a>
+      </li>
+      <li role="presentation">
+        <a>Other</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <br>
+  <div class="col-md-7">
+    <h1 *ngIf="listNav ===''">Please Select a Category!</h1>
+    <ul class="list-group">
+      <li
+        *ngFor="let item of gearList"
+        class="list-group-item list-group-item-info">{{ item }}</li>
+    </ul>
+  </div>
+  <div class="col-md-5">
+    <img *ngFor="let imgPath of logoPaths" [src]="imgPath" alt="{{ imgPath }}" class="img-responsive">
+  </div>
+</div>
