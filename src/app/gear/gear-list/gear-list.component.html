@@ -1,0 +1,10 @@
+<div class="col-md-7">
+  <ul class="list-group">
+    <li
+      *ngFor="let item of gear.itemList"
+      class="list-group-item list-group-item-info">{{ item }}</li>
+  </ul>
+</div>
+<div class="col-md-5">
+  <img *ngFor="let imgPath of gear.logoPaths" [src]="imgPath" alt="{{ imgPath }}" class="img-responsive">
+</div>

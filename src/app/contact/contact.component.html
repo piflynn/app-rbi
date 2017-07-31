@@ -1,16 +1,67 @@
-<div class="row">
-  <div class="col-xs-12">
-    <h1><strong class="page-title">Contact</strong></h1>
+<section class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1><strong class="page-title">Contact</strong></h1>
+      <br>
+      <p><strong class="bottom-line">Owner/Operator:</strong></p>
+      <h4>Russell Brown</h4>
+      <p><strong class="bottom-line">Phone:</strong></p>
+      <h4>(757) 409-3930</h4>
+      <p><strong class="bottom-line">Email:</strong></p>
+      <h4>russ@rbibackline.com</h4>
+    </div>
   </div>
-</div>
-<div class="row">
-  <br>
-  <div class="col-xs-12">
-    <p><strong>Owner/Operator:</strong></p>
-    <h4>Russell Brown</h4>
-    <p><strong>Phone:</strong></p>
-    <h4>(757) 409-xxxx</h4>
-    <p><strong>Email:</strong></p>
-    <h4>RussellBrown@email.com</h4>
+</section>
+<section class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>...or Leave a Message</h3>
+      <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input
+            id="name"
+            type="text"
+            class="form-control"
+            formControlName="name">
+            <div *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched">
+              <span class="help-block" *ngIf="contactForm.get('name').hasError('required')">Name is required!</span>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input
+            id="email"
+            type="text"
+            class="form-control"
+            formControlName="email">
+          <div *ngIf="!contactForm.get('email').valid && contactForm.get('email').touched">
+            <span class="help-block" *ngIf="contactForm.get('email').hasError('required')">Email is required!</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            id="phone"
+            type="text"
+            class="form-control"
+            formControlName="phone">
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea
+            rows="3"
+            id="message"
+            class="form-control"
+            formControlName="message"></textarea>
+          <div *ngIf="!contactForm.get('message').valid && contactForm.get('message').touched">
+            <span class="help-block" *ngIf="contactForm.get('message').hasError('required')">Message is required!</span>
+          </div>
+        </div>
+        <span style="width: 50%; float: right">* = Required</span>
+        <button class="btn btn-primary" type="submit" [disabled]="!contactForm.valid">Submit</button>
+        <button class="btn btn-default" type="button" [disabled]="!contactForm.touched" (click)="onClear()">Clear</button>
+      </form>
+    </div>
   </div>
-</div>
+</section>

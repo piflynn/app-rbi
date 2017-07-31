@@ -1,4 +1,8 @@
-
+a {
+  cursor: pointer;
+}
 .page-title {
   border-bottom: 5px solid #fff;
 }
+
+

@@ -8,26 +8,8 @@ import {GearService} from './gear.service';
   providers: [GearService]
 })
 export class GearComponent implements OnInit {
-  gearList: string[];
-  logoPaths: string[];
-  listNav: string;
-
-  constructor(private gearService: GearService) { }
 
   ngOnInit() {
-    this.gearList = [];
-    this.logoPaths = [];
-    this.listNav = '';
-  }
-
-  onSelectKeys() {
-    this.listNav = 'keys';
-    this.gearList = this.gearService.getKeysList();
-    this.logoPaths = this.gearService.getKeyLogos();
-  }
-
-  onSelectDrums() {
-    this.listNav = 'drums';
   }
 
 }

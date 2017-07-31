@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   font-family: 'Bree Serif', serif;
-
 }
 
 body {
   height: 100%;
   background: #333 url('assets/images/concert.jpg') no-repeat fixed center;
   background-size: cover;
+}
+
+section {
+  background-color: rgba(1,1,1,0.9);
+  color: #fff;
+  box-shadow: 0 5px 10px #111;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 70px;
 }

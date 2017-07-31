@@ -1,5 +1,23 @@
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+  border: 2px solid tomato;
+}
 
+@media (min-width: 576px) {
+
+
+  input, textarea {
+    width: 60%;
+  }
+}
+
+.help-block {
+  color: tomato;
+}
 
 .page-title {
   border-bottom: 5px solid #fff;
+}
+
+.bottom-line {
+  border-bottom: 2px solid #fff;
 }

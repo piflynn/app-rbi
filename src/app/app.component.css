@@ -3,9 +3,10 @@
   bottom: 0;
 }
 
-.container {
-  background-color: rgba(1,1,1,0.9);
-  color: #fff;
-  box-shadow: 0 2px 5px #111;
-  border-radius: 10px;
+
+
+@media (max-width: 767px) {
+  .container {
+    border-radius: 0;
+  }
 }
