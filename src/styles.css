@@ -18,6 +18,15 @@ section {
   margin-bottom: 70px;
 }
 
+.wrapper {
+  background: url('assets/images/pattern.png') repeat;
+  height: 100%;
+}
+
+.extender {
+  height: 800px;
+}
+
 @media (max-width: 768px) {
   section {
     border-radius: 0;

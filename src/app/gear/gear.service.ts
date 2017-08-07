@@ -6,7 +6,25 @@ import 'rxjs/rx';
 export class GearService implements OnInit {
   gearList = [
     {
-      itemList: ['Hammond B3, Foot Pedal, Padded Bench, Wooden Bench', 'Leslie 122, 147', 'Kurzweil PC-88', 'Roland RD-5', 'Nord Lead 2', 'Nord Electro 3'],
+      itemList: [
+        'Hammond B3, Foot Pedal, Padded Bench, Wooden Bench',
+        'Leslie 122, 147',
+        'Kurzweil PC-88',
+        'Roland RD-5',
+        'Nord Lead 2',
+        'Nord Electro 3',
+        'Nord Stage Vintage',
+        'Yamaha ES8',
+        'Yamaha ES7',
+        'Yamaha P155',
+        'Yamaha P250',
+        'Korg Triton Pro X 88',
+        'Korg Triton Pro 76',
+        'Korg microKorg',
+        'Fender Rhodes',
+        'Alesis QS6',
+        'M-Audio Axiom'
+      ],
       logoPaths: ['../../assets/images/yamaha.svg', '../../assets/images/kurzweil.svg', '../../assets/images/hammond.svg', '../../assets/images/leslie.svg', '../../assets/images/korg.svg', '../../assets/images/roland.svg']
     },
     {
@@ -37,7 +55,13 @@ export class GearService implements OnInit {
         'Zildjian K Custom ()'
 
       ],
-      logoPaths: []
+      logoPaths: [
+        '../../assets/images/dw.svg',
+        '../../assets/images/yamaha.svg',
+        '../../assets/images/ludwig.svg',
+        '../../assets/images/sabian.svg',
+        '../../assets/images/zildjian.svg'
+      ],
     },
     {
       itemList: [
@@ -52,7 +76,9 @@ export class GearService implements OnInit {
         'Hartke 410',
         'SWR Workingman 112'
       ],
-      logoPaths: []
+      logoPaths: [
+        '../../assets/images/swr.png'
+      ]
     },
     {
       itemList: [
@@ -71,6 +97,62 @@ export class GearService implements OnInit {
         'Roland JC 120',
         'SWR California Blonde',
         'VOX AC 30 CC2'
+      ],
+      logoPaths: [
+        '../../assets/images/fender.svg'
+      ]
+    },
+    {
+      itemList: [
+        'Fender Stratocaster',
+        'Fender Telecaster',
+        'Fender P Bass',
+        'Fender Jazz Bass',
+        'Epiphone Sheraton',
+        'Epiphone Les Paul',
+        'PRS McCarty',
+        'Martin Acoustic',
+        'Taylor 710CE Acoustic',
+        'Takamine Acoustic'
+      ],
+      logoPaths: [
+        '../../assets/images/fender.svg',
+        '../../assets/images/gibson.svg',
+        '../../assets/images/prs.svg'
+      ]
+    },
+    {
+      itemList: [
+        'Pioneer CDJ 1000 MK2',
+        'Pioneer CDJ 1000 MK3',
+        'Pioneer DJM 800',
+        'Rane TTM 57SL'
+      ],
+      logoPaths: [
+        '../../assets/images/rane.svg',
+        '../../assets/images/pioneer.svg'
+      ]
+    },
+    {
+      itemList: [
+        'Gon Bops Congas',
+        'Pearl Bongos',
+        'Remo Roto Toms (6, 8, 10)',
+        'Tambourines',
+        'Cowbells',
+        'Blocks'
+
+      ],
+      logoPaths: ['../../assets/images/lp.svg']
+    },
+    {
+      itemList: [
+        'Guitar Stands',
+        'Piano Benches',
+        'Bar Stools',
+        'Keyboard Stands',
+        'Powered Speakers',
+        'Mixers'
       ],
       logoPaths: []
     }

@@ -2,11 +2,18 @@
   <div class="container-fluid">
     <!--Brand-->
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="onToggleCollapse()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="/" class="navbar-brand">RBI</a>
     </div>
+
     <!--Main Navigation-->
-    <div class="navbar-right">
-      <ul class="nav navbar-nav">
+    <div class="navbar-collapse" [ngClass]="{collapse: collapse}">
+      <ul class="nav navbar-nav navbar-right">
         <li routerLinkActive="active">
           <a routerLink="gear">Gear</a>
         </li>
